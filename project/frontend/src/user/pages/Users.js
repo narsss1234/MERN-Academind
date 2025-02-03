@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./Users.css";
+
 const Users = () => {
     return (
-    <h1>Users Page - Work in Progress!</h1>
+        <h2>This is Users Page - Work in PRogress!</h2>
     );
 };
 

@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const NewPlace = () => {
     return (
-        <h1>New Pace - Work in Progress!</h1>
+        <h2>New places - Work in Progress!</h2>
     );
 };
-
 
 export default NewPlace;
