@@ -12,7 +12,7 @@ const App = () => {
       <MainNavigation />
       <main>
       <Routes>
-        <Route path="/:UserId/places" element={<UserPlaces />} exact />
+        <Route path="/:userId/places" element={<UserPlaces />} exact />
         <Route path="/" element={<Users />} exact />
         <Route path="/places/new" element={<NewPlace />} exact />
         <Route path="*" element={<Navigate to="/" />} />
