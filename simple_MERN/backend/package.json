@@ -1,18 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend using node+express for simple_MERN",
-  "main": "server.js",
+  "description": "Backend refresher",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon app.js"
   },
-  "author": "Satya",
+  "author": "SatyaN",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "uuid": "^11.0.5"
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "~3.1.9"
   }
 }
