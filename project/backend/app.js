@@ -8,6 +8,15 @@ const port = 5000;
 
 app.use('/api/places', placesRouter);
 
+app.use((error, req,res,next) => {
+    if(res.headerSent) {
+        return next(error);
+    }
+    res.status(error.code || 500);
+
+    res.json({message: error.message || 'An unknown error occurred!'});
+});
+
 app.listen(port, (err) => {
     if(err){
         console.log('Encountered an issue while launching your application.');
