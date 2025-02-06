@@ -6,7 +6,7 @@ const placesRouter = require('./routes/places-routes');
 const app = express();
 const port = 5000;
 
-app.use(placesRouter);
+app.use('/api/places', placesRouter);
 
 app.listen(port, (err) => {
     if(err){
